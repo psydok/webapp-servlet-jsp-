@@ -1,4 +1,4 @@
-package org.mycompany.myname.Servlet;
+package org.mycompany.myname.Service;
 
 
 import java.io.File;

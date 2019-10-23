@@ -1,3 +1,0 @@
-0:0:0:0:0:0:0:1 - - [03/Oct/2019:01:55:29 +0500] "GET /?path=C:\Users\%D0%BC%D0%B0%D0%BA%D1%81\Desktop/ HTTP/1.1" 200 3242 http-bio-8888-exec-1 661
-0:0:0:0:0:0:0:1 - - [03/Oct/2019:01:55:31 +0500] "GET /?path=C:\Users\%D0%BC%D0%B0%D0%BA%D1%81\Desktop\HelloHTML1/ HTTP/1.1" 200 554 http-bio-8888-exec-3 31
-0:0:0:0:0:0:0:1 - - [03/Oct/2019:01:55:32 +0500] "GET /?path=C:\Users\%D0%BC%D0%B0%D0%BA%D1%81\Desktop\HelloHTML1\images/ HTTP/1.1" 200 598 http-bio-8888-exec-4 25

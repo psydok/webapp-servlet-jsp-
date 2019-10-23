@@ -29,5 +29,9 @@
                     }
                 %>
             </div>
+
+            <dir class="logout">
+            <a href="/login">ВЫХОД</a>
+            </dir>
     </body>
 </html>

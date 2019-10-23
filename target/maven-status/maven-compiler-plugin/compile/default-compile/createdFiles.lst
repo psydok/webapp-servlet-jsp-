@@ -1,2 +1,6 @@
-org\mycompany\myname\Service\MainServlet.class
-org\mycompany\myname\Servlet\ServiceDir.class
+org\mycompany\myname\Service\AccountService.class
+org\mycompany\myname\Service\ServiceDir.class
+org\mycompany\myname\Servlet\MainServlet.class
+org\mycompany\myname\Servlet\SignOutServlet.class
+org\mycompany\myname\accounts\UserProfile.class
+org\mycompany\myname\Servlet\SingInServlet.class
