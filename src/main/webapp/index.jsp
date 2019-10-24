@@ -30,8 +30,8 @@
                 %>
             </div>
 
-            <dir class="logout">
-            <a href="/login">ВЫХОД</a>
-            </dir>
+            <form method="post" name="delete">
+            <a href="/login" style="align=right; padding-top:0px;">ВЫХОД</a>
+            </form>
     </body>
 </html>

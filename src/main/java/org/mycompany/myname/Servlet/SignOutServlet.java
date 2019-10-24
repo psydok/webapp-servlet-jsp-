@@ -18,11 +18,11 @@ public class SignOutServlet extends HttpServlet {
             throws ServletException, IOException {
 
         String login = req.getParameter("login");
-        String password = req.getParameter("password");
+        String password = req.getParameter("pass");
         String email = req.getParameter("email");
         UserProfile userProfile = new UserProfile(login, password, email);
         AccountService.addNewUser(userProfile);
-        req.getRequestDispatcher("/signout.html").forward(req, res);
+        req.getRequestDispatcher("/signin.html").forward(req, res);
 
     }
 
