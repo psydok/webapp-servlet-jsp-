@@ -21,7 +21,8 @@ public class SignOutServlet extends HttpServlet {
         String password = req.getParameter("pass");
         String email = req.getParameter("email");
         UserProfile userProfile = new UserProfile(login, password, email);
-        AccountService.addNewUser(userProfile);
+        AccountService accountService = new AccountService();
+        accountService.addNewUser(userProfile);
         req.getRequestDispatcher("/signin.html").forward(req, res);
 
     }

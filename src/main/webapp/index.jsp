@@ -31,7 +31,7 @@
             </div>
 
             <form method="post" name="delete">
-            <a href="/login" style="align=right; padding-top:0px;">ВЫХОД</a>
+            <a href="" style="position:relative; align=left; padding-top:25px;">ВЫХОД</a>
             </form>
     </body>
 </html>

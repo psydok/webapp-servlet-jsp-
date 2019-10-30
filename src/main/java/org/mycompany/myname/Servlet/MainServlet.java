@@ -23,7 +23,6 @@ public class MainServlet extends HttpServlet {
         String path = req.getParameter("path");
         path = new String(path.getBytes(StandardCharsets.ISO_8859_1), StandardCharsets.UTF_8);
 
-        String d = AccountService.getUserBySessionId(req.getSession().getId()).getLogin();
         if (path.contains(AccountService.getUserBySessionId(req.getSession().getId()).getLogin())) {
             ServiceDir serviceDir = new ServiceDir();
             try {

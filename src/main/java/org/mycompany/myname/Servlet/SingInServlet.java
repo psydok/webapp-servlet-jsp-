@@ -25,7 +25,7 @@ public class SingInServlet extends HttpServlet {
         String sessionId = req.getSession().getId();
         String login = req.getParameter("login");
         String pass = req.getParameter("pass");
-
+        AccountService accountService = new AccountService();
 
         if (login == null || pass == null || login == "" || pass == "") {
             res.setContentType("text/html;charset=utf-8");
@@ -33,7 +33,7 @@ public class SingInServlet extends HttpServlet {
             return;
         }
 
-        UserProfile profile = AccountService.getUserByLogin(login);
+        UserProfile profile = accountService.getUserByLogin(login);
         if (profile == null || !profile.getPass().equals(pass)) {
             res.setContentType("text/html;charset=utf-8");
             res.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
@@ -42,8 +42,7 @@ public class SingInServlet extends HttpServlet {
         }
 
         AccountService.addSession(req.getSession().getId(), profile);
-//        req.getRequestDispatcher("/index.jsp").forward(req, res);
-        res.sendRedirect("http://localhost:8888/?path=" + login);
+        res.sendRedirect("http://localhost:8888/?path=C:/Users/" + login);
     }
 
     public void doDelete(HttpServletRequest request, HttpServletResponse response)
