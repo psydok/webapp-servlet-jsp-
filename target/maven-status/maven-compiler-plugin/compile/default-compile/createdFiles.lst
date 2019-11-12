@@ -3,6 +3,7 @@ org\mycompany\myname\Service\ServiceDir.class
 org\mycompany\myname\executor\ResultHandler.class
 org\mycompany\myname\Servlet\MainServlet.class
 org\mycompany\myname\Servlet\SingInServlet.class
+org\mycompany\myname\Service\HibernateUtil.class
 org\mycompany\myname\Servlet\SignOutServlet.class
 org\mycompany\myname\accounts\UserProfile.class
 org\mycompany\myname\executor\Executor.class

@@ -30,8 +30,8 @@
                 %>
             </div>
 
-            <form method="post" name="delete">
-            <a href="" style="position:relative; align=left; padding-top:25px;">ВЫХОД</a>
+            <form action="${pageContext.request.contextPath}/signin" method="post">
+             <div><input type="submit" name="exit_button" value="EXIT" style="position:absolute; top:0; right:0;"></div>
             </form>
     </body>
 </html>

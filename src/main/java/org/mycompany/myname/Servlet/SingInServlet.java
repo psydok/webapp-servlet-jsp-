@@ -16,7 +16,7 @@ public class SingInServlet extends HttpServlet {
     public void doPost(HttpServletRequest req, HttpServletResponse res)
             throws ServletException, IOException {
 
-        String logout = req.getParameter("delete");
+        String logout = req.getParameter("exit_button");
         if (logout != null) {
             doDelete(req, res);
             return;
@@ -45,10 +45,11 @@ public class SingInServlet extends HttpServlet {
         res.sendRedirect("http://localhost:8888/?path=C:/Users/" + login);
     }
 
-    public void doDelete(HttpServletRequest request, HttpServletResponse response)
+    public void doDelete(HttpServletRequest req, HttpServletResponse res)
             throws IOException, ServletException {
-        String sessionId = request.getSession().getId();
+        String sessionId = req.getSession().getId();
         AccountService.deleteSession(sessionId);
+        req.getRequestDispatcher("/signin.html").forward(req, res);
     }
 
 }

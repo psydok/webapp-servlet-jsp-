@@ -30,12 +30,12 @@ public class MainServlet extends HttpServlet {
                     req.setAttribute("path", serviceDir.getCurrentDir());
                     req.setAttribute("directory", serviceDir.getChildDir());
                     req.setAttribute("files", serviceDir.getSimpleFiles());
-
                     getServletContext().getRequestDispatcher("/index.jsp").forward(req, res);
                 }
             } catch (IOException e) {
                 res.getWriter().print("Hello from servlet do get");
             }
+            req.getRequestDispatcher("/index.jsp").forward(req, res);
         }
     }
 }
